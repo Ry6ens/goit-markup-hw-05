@@ -160,6 +160,7 @@ img {
 .nav-contact:focus {
     fill: var(--accent-color);
     color: var(--accent-color);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .current {
@@ -222,6 +223,12 @@ img {
     background: #2196F3;
 
     border-radius: 4px;
+    cursor: pointer;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Модальное окно */
@@ -234,6 +241,8 @@ img {
     height: 100%;
 
     background-color: rgba(0, 0, 0, 0.2);
+
+    transition: opacity 200ms ease-in;
 }
 
 .backdrop.is-hidden {
@@ -252,8 +261,6 @@ img {
     height: 581px;
 
     background-color: rgba(255, 255, 255, 1);
-
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-modal {
@@ -347,8 +354,42 @@ img {
     display: flex;
 }
 
+.description-item {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+
 .description-item:not(:last-child) {
     margin-right: 30px;
+}
+
+.description-block {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: 70px;
+    margin: 0;
+
+
+    background: rgba(47, 48, 58, 0.8);
+}
+
+.description-label {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
 }
 
 /* Наша команда */
@@ -434,6 +475,7 @@ img {
 .society:focus {
     fill: #fff;
     background-color: var(--accent-color);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .society-color {
@@ -472,6 +514,7 @@ img {
 .link-client:focus {
     border: 1px solid #2196F3;
     fill: #2196F3;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Filter */
@@ -506,6 +549,7 @@ img {
     color: var(--primary-white-color);
     background-color: var(--accent-color);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .active {
@@ -537,6 +581,7 @@ img {
 .portfolio-card:hover,
 .portfolio-card:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .thumb {
@@ -571,6 +616,7 @@ img {
 .portfolio-card:hover .overlay,
 .portfolio-card:focus .overlay {
     transform: translateY(0);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .label {
@@ -643,6 +689,7 @@ img {
 .footer-mail:focus,
 .footer-tel:focus {
     color: var(--accent-color);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-connect {
